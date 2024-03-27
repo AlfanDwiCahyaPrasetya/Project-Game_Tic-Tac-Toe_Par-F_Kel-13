@@ -89,6 +89,10 @@ class TicTacToe {
         btn.disabled = true;
         btn.classList.add('x');
         this.GameBoards[index] = 'x'; // Simpan langkah pemain di papan permainan
+
+        const soundClick = new Audio('./Audio/interface-124464.mp3'); // Membuat objek audio baru
+        soundClick.play(); // Memutar suara klik
+        
         this.checkWinner();
         if (!this.isGameOver) {
             this.switchPlayer();
