@@ -76,6 +76,10 @@ class TicTacToe {
         btn.disabled = true;
         btn.classList.add(btn.innerText);
         this.GameBoards[index] = btn.innerText;
+
+        const soundClick = new Audio('./Audio/interface-124464.mp3'); // Membuat objek audio baru
+        soundClick.play(); // Memutar suara klik
+        
         this.switchPlayer();
         this.checkWinner();
         this.checkDraw();
