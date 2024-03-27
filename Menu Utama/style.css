@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #231059, #151414);
+    color: white;
+    padding: 12px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.judul {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    background-size: cover;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.game-nav {
+    text-align: center;
+}
+
+.game-click {
+    list-style: none; 
+}
+
+.game-click li {
+    margin-bottom: 20px;
+}
+
+.game-click li a {
+    color: white;
+    font-size: 20px;
+    background-color: #00008B;
+    padding: 15px 30px; /* Tetapkan padding yang sama */
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    width: 280px; /* Tambahkan lebar yang sama untuk semua tombol */
+    transition: background-color 0.3s ease;
+}
+
+
+.game-click li a:hover {
+    background-color: #0000FF; /* Ubah warna latar belakang saat dihover */
+}
