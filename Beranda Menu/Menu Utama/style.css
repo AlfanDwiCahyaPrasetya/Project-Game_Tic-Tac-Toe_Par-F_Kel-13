@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('Home.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    padding: 12px;
+    font-family: 'Fredoka One', cursive;
+}
+
+:root {
+    --color-purple: #6649c6;
+    --color-purple-dark: #332167;
+    --color-red: #eb1650;
+    --color-yellow: #ffd031;
+}
+
+.judul {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    background-size: cover;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.game-nav {
+    text-align: center;
+}
+
+.game-click {
+    list-style: none; 
+}
+
+.game-click li {
+    margin-bottom: 20px;
+}
+
+.game-click li a {
+    color: white;
+    font-size: 20px;
+    background-color: #00008B;
+    padding: 15px 30px; /* Tetapkan padding yang sama */
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    width: 280px; /* Tambahkan lebar yang sama untuk semua tombol */
+    transition: background-color 0.3s ease;
+}
+
+.game-click li a:hover {
+    background-color: #0000FF; /* Ubah warna latar belakang saat dihover */
+}
+
+#kembali {
+    position: absolute;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 125px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed; /* Mengubah posisi menjadi fixed */
+    bottom: 20px; /* Menyesuaikan posisi bottom */
+    right: 20px; /* Menyesuaikan posisi right */
+    z-index: 1000; /* Menetapkan z-index agar elemen berada di atas konten lain */
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 250px; /* Tambahkan lebar yang sama untuk semua tombol */
+    transition: background-color 0.3s ease;
+}
+
+#kembali a {
+    font-family: 'Fredoka One', cursive;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 24px; /* Menyesuaikan padding */
+    border-radius: 12px; /* Menambahkan sudut melengkung */
+    transition: all 0.3s ease; /* Menambahkan efek transisi untuk semua properti */
+    color: white;
+    font-size: 20px;
+    background-color: #00008B;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+#kembali a:hover {
+    background-color: #0000FF; /* Mengubah warna latar belakang saat hover */
+    border-color: var(--color-purple-dark); /* Mengubah warna border saat hover */
+}
