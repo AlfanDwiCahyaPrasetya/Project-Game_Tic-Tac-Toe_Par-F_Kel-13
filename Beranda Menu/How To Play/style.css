@@ -1,0 +1,103 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #231059, #151414);
+    color: white;
+    padding: 12px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.judul {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 50px;
+    background-size: cover;
+    padding: 20px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.image-container .contoh-gambar-2.animated {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.contoh-gambar {
+    max-width: 100%;
+    opacity: 0.5;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.contoh-gambar.animated {
+    opacity: 1;
+    transform: translateY(0);
+    animation: slideUp 1.5s ease forwards;
+}
+
+
+.info-tutorial p {
+    text-align: left;
+    padding-left: 10%;
+    padding-right: 5%;
+    font-size: 25px;
+}
+
+.contoh-gambar {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+}
+
+.contoh-gambar-2 {
+    width: 20%;
+}
+
+#kembali {
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 125px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    width: 250px; 
+    transition: background-color 0.3s ease;
+}
+
+#kembali a {
+    font-size: 18px;
+    font-family: 'Fredoka One', cursive;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #00008B;
+    padding: 12px 24px; 
+    border-radius: 15px; 
+    transition: all 0.3s ease; 
+}
+
+#kembali a:hover {
+    background-color: #0000FF; /* Mengubah warna latar belakang saat hover */
+}
